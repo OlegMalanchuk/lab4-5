@@ -1,16 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-
-        Sedan s = new Sedan("Mersides","s390","black",1984,4,2.3,false);
-        s.sum();
-        Wagon wagon = new Wagon("BMW","E34","gray",1989,6,1.9,31);
-        wagon.sum();
+        Car  c = new Car("Mersides","s390","black",1984,4,2.3);
         Jeep jeep = new Jeep("BMW","E34","gray",1989,6,3.6,true);
-        jeep.sum();
 
 
+        SportsCar sportsCar = new SportsCar("BMW","E34","gray",1989,6,3.6,true);
+        sportsCar.speed();
+        sportsCar.maxSpeed();
+        Sedan sedan = new Sedan("BMW","E34","gray",1989,6,3.6,true) {
+            @Override
+            public void speed() {
 
+            }
+        };
+        sedan.maxSpeed();
+        sedan.speed();
 
 
 

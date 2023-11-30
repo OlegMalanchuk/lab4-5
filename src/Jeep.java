@@ -11,4 +11,19 @@ public class Jeep extends Car{
         }else price+=1040;
         System.out.println(price);
     }
+
+    /////////////////////////////////////////////////////////////5///////////////////////////////////////////////
+    @Override
+    public void sound(){
+        System.out.println("Врууууууммммм");// перевизначення методу sound
+    }
+
+    public void sound(int k){//перевантаження метода sound
+        for (int i = 0;i<k;i++){
+
+            sound();
+        }
+    }
+
+
 }
